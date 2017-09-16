@@ -3,6 +3,8 @@ package br.com.fabrideprogramador.web2.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import br.com.fabrideprogramador.web2.model.Usuario;
@@ -63,7 +65,9 @@ public class UsuarioController {
 		return usuarioRepository.findAll();
 	}
 
+	@GetMapping ("/q/perfil")
+	List<Usuario> buscarPorPerfil(@RequestParam("descricao") String descricao ){
+		return usuarioRepository.buscarPorPerfil(descricao);
+	}
 
-	
-	
 }
