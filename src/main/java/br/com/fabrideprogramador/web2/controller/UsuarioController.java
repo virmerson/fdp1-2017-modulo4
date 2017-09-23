@@ -12,6 +12,7 @@ import br.com.fabrideprogramador.web2.repository.UsuarioRepository;
 
 @RestController
 @RequestMapping("/usucontroller")
+@CrossOrigin(origins = {"http://127.0.0.1:52282"} )
 public class UsuarioController {
 
 	@Autowired
