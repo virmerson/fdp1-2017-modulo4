@@ -10,6 +10,7 @@ import java.util.List;
 /**
  * Created by Virmerson Bento dos Santos on 02/09/17.
  */
+@CrossOrigin(origins = {"*"} )
 @RestController
 @RequestMapping("/perfilcontroller")
 public class PerfilController {
