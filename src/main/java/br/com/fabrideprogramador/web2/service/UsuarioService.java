@@ -1,4 +1,4 @@
-package br.com.fabrideprogramador.web2;
+package br.com.fabrideprogramador.web2.service;
 
 import br.com.fabrideprogramador.web2.model.Perfil;
 import br.com.fabrideprogramador.web2.model.Usuario;

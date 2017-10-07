@@ -2,16 +2,11 @@ package br.com.fabrideprogramador.web2.controller;
 
 import java.util.List;
 
-import br.com.fabrideprogramador.web2.UsuarioService;
-import br.com.fabrideprogramador.web2.model.Perfil;
-import br.com.fabrideprogramador.web2.repository.PerfilRepository;
+import br.com.fabrideprogramador.web2.service.UsuarioService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
-import org.springframework.data.repository.query.Param;
 import org.springframework.web.bind.annotation.*;
 
 import br.com.fabrideprogramador.web2.model.Usuario;
-import br.com.fabrideprogramador.web2.repository.UsuarioRepository;
 
 @RestController
 @RequestMapping("/usucontroller")
